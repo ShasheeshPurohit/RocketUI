@@ -1,0 +1,76 @@
+.documentation-layout {
+  display: grid;
+  grid-template-columns: "1fr 1fr 1fr";
+  grid-template-rows: "auto auto auto";
+  /* justify-content: center; */
+  grid-gap: "20px";
+  grid-template-areas:
+    "nav doc doc"
+    "nav doc doc";
+  /* overflow-x: hidden; */
+}
+
+.nav-section,
+.docs {
+  /* border: 1px solid black; */
+}
+
+.nav-section {
+  grid-area: nav;
+  /* background-color: red; */
+  overflow: hidden;
+  width: 15rem;
+}
+
+.navigation-btn {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 12em; */
+  width: 15rem;
+  flex-direction: column;
+}
+
+.navigation-btn > .button-nav {
+  width: 100%;
+  background: none;
+  border: none;
+  margin: 1rem 0;
+  padding: 1rem 0 1rem 0;
+  font-size: 1.5rem;
+  outline: none;
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.navigation-btn > .button-nav:hover {
+  background-color: rgba(128, 128, 128, 0.425);
+}
+
+.navigation-btn > .button-nav:active {
+  outline: none;
+}
+
+.doc {
+  grid-area: doc;
+  /* display: flex; */
+  flex-direction: column;
+  padding: 2rem;
+  border-left: 5px solid rgb(150, 150, 150);
+}
+
+.component-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.doc > a {
+  margin: 0 0.5rem;
+}
+
+.home-route {
+  text-decoration: none;
+  color: black;
+}

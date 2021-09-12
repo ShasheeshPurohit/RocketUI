@@ -1,0 +1,784 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.seperator {
+  height: 10px;
+  width: 10px;
+  margin-top: 2rem;
+}
+
+.containerBox {
+  padding: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/***************************************************
+******************* NAVBAR *************************
+****************************************************/
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(179, 179, 179);
+  border-radius: 25px;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: space-between;
+}
+
+.navBrand {
+  margin: 0 1rem;
+  cursor: pointer;
+  color: red;
+  font-weight: 900;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+  margin: 0 2rem 0 0;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.navItem:link,
+.navItem:visited {
+  margin: 0 2rem;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+
+.navItem:hover,
+.navItem:active {
+  border-bottom: 2px solid red;
+}
+
+.main-search {
+  width: 20rem;
+  margin-right: 2rem;
+  border-radius: 10px;
+  outline: transparent;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+.dark {
+  background-color: #010101;
+  color: white;
+}
+
+/***************************************************
+******************* Buttons *************************
+****************************************************/
+
+.btn:link,
+.btn:visited {
+  border: none;
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  width: 7rem;
+  transition: all 0.2s;
+}
+
+.cardButton:link,
+.cardButton:visited {
+  background-color: rgba(0, 68, 255, 0.822);
+  text-decoration: none;
+  color: white;
+  padding: 0.2rem 1rem;
+}
+
+.cardPosterButton:link,
+.cardPosterButton:visited {
+  background-color: rgb(49, 15, 102);
+  text-decoration: none;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.cardPosterButton:hover,
+.cardPosterButton:active {
+  background-color: rgb(73, 22, 155);
+}
+
+.btn.btn-primary {
+  background-color: rgba(0, 24, 90, 0.925);
+}
+
+.btn.btn-primary:hover {
+  background-color: rgb(0, 28, 104);
+}
+
+.btn.btn-danger {
+  background-color: rgba(168, 0, 0, 0.925);
+}
+
+.btn.btn-danger:hover {
+  background-color: rgb(138, 0, 0);
+}
+
+.btn.btn-warning {
+  background-color: rgba(172, 160, 0, 0.925);
+}
+
+.btn.btn-warning:hover {
+  background-color: rgb(151, 123, 0);
+}
+
+.btn.btn-success {
+  background-color: rgba(0, 70, 15, 0.884);
+}
+
+.btn.btn-success:hover {
+  background-color: rgba(0, 116, 25, 0.925);
+}
+
+.btn.btn-large {
+  width: 8rem;
+}
+
+.cartButton:link,
+.cartButton:visited,
+.cartButton {
+  padding: 0.2rem 0.8rem;
+  text-decoration: none;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: rgba(255, 68, 0, 0.8);
+  color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: rgb(255, 68, 0);
+}
+
+.btn-secondary:link,
+.btn-secondary:visited {
+  background-color: rgb(53, 0, 102, 0.8);
+  color: white;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+  background-color: rgb(53, 0, 102);
+}
+
+.btn-main:link,
+.btn-main:visited {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.btn-main:active,
+.btn-main:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.btn-utilities:link,
+.btn-utilities:visited,
+.btn-utilities {
+  text-decoration: none;
+  background-color: rgb(10, 0, 151);
+  color: white;
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+}
+
+.btn-wishlist:link span,
+.btn-wishlist:visited span,
+.btn-wishlist span {
+  font-size: 1rem;
+}
+
+.btn-wishlist:active > span,
+.btn-wishlist:active > span {
+  color: red;
+}
+
+.btn-search {
+  text-decoration: none;
+  background-color: #f3a847;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+}
+
+.btn-basics:link,
+.btn-basics:visited {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: grey;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+.btn-basics:hover,
+.btn-basics:active {
+  background-color: rgba(128, 128, 128, 0.233);
+}
+
+.floating-btn {
+  border: none;
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 100%;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.floating-btn.btn-primary {
+  background-color: rgba(0, 24, 90, 0.925);
+}
+
+.floating-btn.btn-primary:hover {
+  background-color: rgb(0, 28, 104);
+}
+
+.floating-btn.btn-danger {
+  background-color: rgba(168, 0, 0, 0.925);
+}
+
+.floating-btn.btn-danger:hover {
+  background-color: rgb(138, 0, 0);
+}
+
+.floating-btn.btn-warning {
+  background-color: rgba(172, 160, 0, 0.925);
+}
+
+.floating-btn.btn-warning:hover {
+  background-color: rgb(151, 123, 0);
+}
+
+.floating-btn.btn-success {
+  background-color: rgba(0, 70, 15, 0.884);
+}
+
+.floating-btn.btn-success:hover {
+  background-color: rgba(0, 116, 25, 0.925);
+}
+
+/***************************************************
+******************* Alerts *************************
+****************************************************/
+
+.alert {
+  width: 50%;
+  border: 1px solid black;
+  padding: 0.2rem;
+  letter-spacing: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert span {
+  font-size: 1.8rem;
+
+  margin: 0.5rem;
+}
+
+.alert-error {
+  background-color: rgb(139, 0, 0);
+  color: white;
+}
+
+.alert-success {
+  background-color: rgb(0, 119, 20);
+  color: white;
+}
+
+.alert-warning {
+  background-color: rgb(146, 132, 0);
+  color: white;
+}
+
+.alert-info {
+  background-color: rgb(2, 0, 119);
+  color: white;
+}
+
+/***************************************************
+******************* Cards *************************
+****************************************************/
+
+.poster-card {
+  width: 13rem;
+  height: 20rem;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.poster-card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+}
+
+.poster-card-header > img {
+  height: 70%;
+  /* width: 100%; */
+}
+
+.poster-card-body {
+  line-height: 0rem;
+  font-size: 0.8rem;
+}
+
+.poster-buttons {
+  display: flex;
+  /* font-size: 0.8rem; */
+  flex-direction: column;
+  width: 100%;
+}
+
+.poster-button {
+  font-size: 0.8rem;
+  outline: none;
+  color: white;
+  border: none;
+}
+
+.cartAddButton {
+  background-color: orange;
+}
+.wishListMyntraButton {
+  background-color: rgb(45, 45, 128);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  border: 1px solid black;
+  align-items: center;
+  height: 30rem;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 1px 1px grey;
+}
+
+.card-body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-body > p {
+  margin: 0.5rem;
+}
+
+.card-ecom-image {
+  height: 15rem;
+  flex-shrink: 1;
+}
+
+.item-name {
+  font-weight: 800;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+
+.item-price {
+  font-weight: bold;
+}
+
+.card-modern {
+  width: 20rem;
+
+  height: 30rem;
+}
+
+.card-modern-body {
+  position: relative;
+}
+
+.card-modern-image {
+  width: 20rem;
+  height: 30rem;
+  border-radius: 10px;
+}
+
+.card-modern-text {
+  top: 10px;
+  font-weight: bold;
+  color: white;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  border-radius: 10px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+
+.card-movie-text:link,
+.card-movie-text:visited {
+  text-decoration: none;
+  top: 60%;
+  font-weight: bold;
+  color: white;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.5rem;
+  border-radius: 10px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+
+.card-uplift-text:link,
+.card-uplift-text:visited {
+  text-decoration: none;
+  bottom: 5px;
+  font-weight: bold;
+  width: 80%;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.5rem;
+  border-radius: 10px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+
+.card-light-image {
+  width: 20rem;
+  height: 30rem;
+  border-radius: 10px;
+  filter: brightness(50%);
+  transition: all 0.2s;
+}
+
+.card-light-image:hover {
+  filter: brightness(100%);
+}
+
+/********************************************
+************* FLIP CARD *********************
+*********************************************/
+
+.flipcard {
+  height: 400px;
+  width: 300px;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+}
+
+.flipcard:hover .flipcard-front {
+  transform: rotateX(-180deg);
+}
+
+.flipcard:hover .flipcard-back {
+  transform: rotateX(0deg);
+}
+
+.flipcard-back h2 {
+  margin: 60% auto 35% auto;
+  font-size: 26px;
+  color: #ff4aae;
+}
+
+.flipcard-back h2 span {
+  font-size: 20px;
+  color: #ff4aae;
+}
+
+.flipcard-front {
+  height: 100%;
+  width: 100%;
+  /* background-image: url("https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=653&q=80"); */
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #161616;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+
+.flipcard-front > img {
+  height: 100%;
+  width: 100%;
+}
+
+.flipcard-back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #161616;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+  text-align: center;
+}
+
+.flipcard-back a {
+  height: 20px;
+  width: 20px;
+  padding: 5px 5px;
+  border-radius: 4px;
+  line-height: 20px;
+  transition: ease-in-out 0.1s;
+}
+
+.flipcard a:hover {
+  color: #161616;
+  background-color: #ff4a54;
+}
+
+/********************************************
+**********************************************
+*********************************************/
+
+.card-login {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  border: 1px solid black;
+  align-items: center;
+  height: 15rem;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+
+.textboxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.username-textbox,
+.password-textbox {
+  margin: 0.5rem;
+  border-radius: 5px;
+  height: 1.5rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid grey;
+}
+
+.btn-login {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(255, 166, 0);
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.passwordReset:link,
+.passwordReset:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+/******************************************
+*************** AVATAR ********************
+******************************************/
+.avatar {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.avatar-image,
+.avatar-border-image {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.avatar-border {
+  border: 10px solid orangered;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.avatar-border-image {
+  height: 80%;
+}
+
+/******************************************
+*************** AVATAR BADGES ********************
+******************************************/
+
+.badge-avatar {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  height: 20px;
+  right: 1rem;
+  top: 0.5rem;
+  width: 20px;
+  border-radius: 50%;
+  background-color: darkgreen;
+}
+
+.badge-card {
+  position: absolute;
+  height: 20px;
+  right: 0rem;
+  color: white;
+  padding: 0.2rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  top: 0.5rem;
+  background-color: rgb(95, 0, 99);
+}
+
+/***********************
+*******NEW *************
+************************/
+
+.myntra-card {
+  width: 12rem;
+  border-radius: 5px;
+  /* height: 20rem; */
+  border: none;
+  display: flex;
+  padding: 0.1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.myntra-card-header {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  /* border: 1px solid black; */
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.myntra-badge-card {
+  position: absolute;
+  top: 0.1rem;
+  cursor: pointer;
+  right: 0.1rem;
+  /* color: red; */
+}
+
+.myntra-card-header > img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 100%;
+  width: 100%;
+  /* width: 100%; */
+}
+
+.myntra-card-body {
+  /* line-height: 0rem; */
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.myntra-card-body > p {
+  margin: 0;
+}
+
+.myntra-buttons {
+  display: flex;
+  /* font-size: 0.8rem; */
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.myntra-button {
+  font-size: 0.7rem;
+  padding: 0.1rem 0;
+  outline: none;
+  /* width: max-content; */
+  width: 100%;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  /* border: 1px solid black; */
+  cursor: pointer;
+}
+
+.cartAddButton {
+  /* background-color: orange; */
+  color: rgb(255, 0, 55);
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+
+  padding: 0 0.2rem;
+  height: 1.5rem;
+  width: 80%;
+
+  border: 1px solid rgb(255, 0, 55);
+}
+
+.cartAddButton:hover {
+  /* background: rgba(255, 166, 0); */
+  background: rgb(255, 0, 55);
+  color: white;
+}
+
+.wishListMyntraButton {
+  /* background-color: rgb(45, 45, 128); */
+  color: white;
+  font-size: 1.5rem;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.wishListMyntraButton > span:hover {
+  color: rgb(255, 0, 55);
+}
